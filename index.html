@@ -1,0 +1,238 @@
+﻿ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="deny">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <title>الموعظة</title>
+    <link rel="icon" type="image/png" href="images/favi.png">
+    <!-- Fonts Links Are in Description -->
+    <!-- thuluth decorated Font-->
+    <link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=thuluth-decorated" />
+    <!-- Cairo Font-->
+    <link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=cairo-bold" />
+    <!-- Font AWesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <!-- Main Style -->
+    <link rel="stylesheet" href="./fonts/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="Logo">الموعظة لوجه الله</div>
+
+      <ul class="lists">
+        <li data-filter="main" class="active">الصفحة الرئيسية</li>
+        <li data-filter="hadith">أحاديث</li>
+        <li data-filter="lectures">محاضرات</li>
+        <li data-filter="quran">اَلْقُرْآنْ اَلْكَرِيمْ</li>
+        <li data-filter="pray">أوقات الصلاة</li>
+        <li data-filter="footer">تواصل معنا</li>
+      </ul>
+
+      <div class="bars">
+        <i class="fas fa-bars"></i>
+      </div>
+
+    </div>
+  </header>
+  <section class="main">
+    <div class="container">
+      <div class="title">
+          <h2 class="txt">
+            مرحبا بك في
+            <br>
+            موقع الموعظة الإسلامي
+          </h2>
+        <button class="btn">
+          ابدأ التصفح
+          <i class="fas fa-caret-left"></i>
+        </button>
+      </div>
+    </div>
+        <div class="container1">
+            <button id="fetch-names">أسماء الله الحسنى</button>
+            <div id="names">
+                <span></span>
+            </div>
+            <button id="return-to-site" style="display: none;">Return to Site</button>
+        </div>
+  </section>
+<!-- End of Section-->
+<section class="backg">
+    <div class="container3">
+      <button id="azkarButton">قسم الأذكار هنا</button>
+      <div id="azkarContent"></div>
+      <button id="backButton" style="display: none;">الرجوع للرئيسية</button>
+    </div>
+</section>
+<!-- Hadit section -->
+  <section class="hadith">
+      <h3>أحاديث</h3>
+      <div class="container">
+
+        <div class="hadithContainer">
+
+        </div>
+        <div class="buttons">
+            <div class="prev">السابق</div>
+            <div class="number">1/ 300</div>
+            <div class="next">التالي</div>
+        </div>
+
+      </div>
+  </section>
+<!-- End of  HadithSection-->
+
+<!-- Lectures section -->
+  <section class="lectures">
+    <h3>محاضرات</h3>
+    <div class="container">
+      <div class="lectures-container">
+        <div class="right">
+          <a href="https://www.youtube.com/watch?v=XtNzvoe2HcQ" target="_blank">
+            <div class="lec">
+              <div class="lec-text">
+                <h4>إن رّبك فعَّال لما يريد</h4>
+                <p>محاضرة رائعة من تقديم فضيلة الشيخ الشعراوي</p>
+              </div>
+              <img src="./images/sha1.png" alt="">
+            </div>
+          </a>
+          <a href="https://www.youtube.com/watch?v=pNlPucBXwUs" target="_blank">
+            <div class="lec">
+              <div class="lec-text">
+                <h4>إرجع إلى الله</h4>
+                <p>محاضرة رائعة من تقديم فضيلة محمد راتب النابلسي</p>
+              </div>
+              <img src="./images/pic5.jfif" alt="">
+            </div>
+          </a>
+          <a href="https://www.youtube.com/watch?v=LXgh9cDfyPY" target="_blank">
+            <div class="lec">
+              <div class="lec-text">
+                <h4>سأحدثكم عن الله سبحانه وتعالى قليلاً</h4>
+                <p>من تقديم فضيلة دريد ابراهيم الموصلي</p>
+              </div>
+              <img src="./images/pic5.jpg" alt="">
+            </div>
+          </a>
+          <a href="https://www.youtube.com/watch?v=HRRyHlpEWZA" target="_blank">
+            <div class="lec">
+              <div class="lec-text">
+                <h4>خطتي في رمضان</h4>
+                <p>محاضرة رائعة من تقديم فضيلة ياسين العمري</p>
+              </div>
+              <img src="./images/pic6.jpg" alt="">
+            </div>
+          </a>
+        </div>
+        <div class="left">
+          <iframe src="https://www.youtube.com/embed/pM6gIGlHTvk" frameborder="0"></iframe>
+          <p>محاضرة بعنوان لمحات على درب الاستقامة</p>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+<!-- End of Lectures section -->
+
+<!-- Quran section -->
+  <section class="quran">
+      <h3>اَلْقُرْآنْ اَلْكَرِيمْ</h3>
+      <div class="container">
+        <div class="surhasContainer">
+
+        </div>
+      </div>
+  </section>
+
+<!-- End of Quran section -->
+<!-- Quran bisawt section -->
+
+<section class="container2">
+    <button onclick="showPopup()" class="ls-quran">القرآن الكريم بالصوت</button>
+    <div id="popup" style="display: none;">
+      <h2>إضغط على السورة لتسمع</h2>
+      <ul id="audioList"></ul>
+      <button onclick="hidePopup()" class="st-quran">الرجوع للرئيسية</button>
+    </div>
+  </section>
+
+<!-- End of Quran bisawt section -->
+<!-- Pray Time Section -->
+  <section class="pray">
+    <h3>أوقات الصلاة</h3>
+    <div class="container">
+
+      <div class="cards">
+
+          <div class="card">
+              <div class="circle">
+
+                <svg>
+                  <Circle cx="100" cy="100" r="100"></Circle>
+                </svg>
+                <div class="praytime"></div>
+
+              </div>
+              <p></p>
+          </div>
+
+      </div>
+
+    </div>
+  </section>
+
+<!-- End of Pray Time Section -->
+
+<!-- Footer -->
+
+<section class="footer">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path  fill-opacity="1" d="M0,0L48,48C96,96,192,192,288,197.3C384,203,480,117,576,117.3C672,117,768,203,864,224C960,245,1056,203,1152,165.3C1248,128,1344,96,1392,80L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+    </path>
+  </svg>
+  <div class="contactus">
+    <p class="ppp">تواصل معنا عبر مواقع التواصل</p>
+  </div>
+  <div class="social">
+
+    <a href="https://www.facebook.com/THEISLAMICSERMON24/" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.youtube.com/channel/UCCouQXSd8F9nQJvkg18A0Hw" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="https://t.me/+dXsGdMa_Q7UwZTQ0" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+    <a href="https://www.instagram.com/theislamic_serbon/" target="_blank"><i class="fab fa-instagram"></i></a>
+
+  </div>
+</section>
+<!-- End ofFooter -->
+<!-- Pop Up -->
+  <div class="surah-popup">
+
+    <div class="close-popup">
+      <i class="fas fa-times"></i>
+    </div>
+
+    <div class="ayat">
+        <p></p>
+    </div>
+  </div>
+<!-- End of Pop Up -->
+<!-- Scroll Top -->
+<div class="scrollBtn">
+    <i class="fas fa-angle-double-up"></i>
+</div>
+<!-- JS file -->
+    <script src="./fonts/all.min.js"></script>
+
+    <script src="./main.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
